@@ -19,9 +19,6 @@ public:
 	void SpawnBricks();
 
 	UPROPERTY(EditAnywhere)
-		const TSubclassOf<FTransform> SpawnLocation;
-
-	UPROPERTY(EditAnywhere)
 		TSubclassOf<AActor> ActorBPToSpawn;
 
 protected:
