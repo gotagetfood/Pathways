@@ -32,10 +32,10 @@ void APuzzle::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
-void APuzzle::SpawnBricks()
+void APuzzle::SpawnBricks(FVector Loc, FRotator Rot)
 {
-	FActorSpawnParameters spawnParams;
-	spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
-	GetWorld()->SpawnActor<AActor>(ActorBPToSpawn, GetActorTransform(), spawnParams);
+	GetWorld()->SpawnActor<AActor>(ActorBPToSpawn, Loc, Rot, SpawnParams);
 }

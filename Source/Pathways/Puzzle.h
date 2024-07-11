@@ -16,7 +16,7 @@ public:
 	APuzzle();
 
 	UFUNCTION(BlueprintCallable, Category = "Abilities")
-	void SpawnBricks();
+	void SpawnBricks(FVector loc, FRotator Rot);
 
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<AActor> ActorBPToSpawn;
