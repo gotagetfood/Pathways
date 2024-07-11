@@ -15,6 +15,15 @@ public:
 	// Sets default values for this pawn's properties
 	APuzzle();
 
+	UFUNCTION(BlueprintCallable, Category = "Abilities")
+	void SpawnBricks();
+
+	UPROPERTY(EditAnywhere)
+		const TSubclassOf<FTransform> SpawnLocation;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<AActor> ActorBPToSpawn;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
