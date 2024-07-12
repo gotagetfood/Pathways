@@ -25,6 +25,12 @@ struct FGamePuzzle
     int32 Id;
 
     UPROPERTY(BlueprintReadWrite)
+    int32 Rows;
+
+    UPROPERTY(BlueprintReadWrite)
+    int32 Columns;
+
+    UPROPERTY(BlueprintReadWrite)
     TArray<FGridRow> Grid;
 };
 
@@ -35,6 +41,9 @@ struct FBiome
 
     UPROPERTY(BlueprintReadWrite)
     FString Name;
+
+    UPROPERTY(BlueprintReadWrite)
+    FString Title;
 
     UPROPERTY(BlueprintReadWrite)
     TArray<FGamePuzzle> Puzzles;
@@ -59,7 +68,29 @@ public:
     APuzzleReader();
 
     UFUNCTION(BlueprintCallable, Category = "PuzzleReader")
-    virtual TArray<AActor*> ReadPuzzle(FString id);
+    static TArray<AActor*> ReadPuzzle(FString id, int32& OutRows, int32& OutColumns);
+
+    //building Bricks
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickBackBoard;
+
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickBlocking;
+
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickBorder;
+
+    //player Bricks
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickCLOrange;
+
+    //goal Bricks
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickGoalOrange;
+
+private:
+    TSubclassOf<AActor> GetBrickClass(const FString& BrickType);
+
 
 protected:
     // Called when the game starts or when spawned

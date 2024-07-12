@@ -1,43 +1,58 @@
 {
   "biomes": [
     {
-      "name": "Red Forest",
+      "Title": "Red Forest",
+      "name": "rf",
       "puzzles": [
         {
           "id": 1,
+          "rows": 5,
+          "columns": 5,
           "grid": [
-            [ "B", "B", "E" ],
-            [ "E", "B", "B" ],
-            [ "B", "E", "B" ]
+            [ "BB", "BB", "BB", "BB", "BB" ],
+            [ "BB", "E", "GO", "E", "BB" ],
+            [ "BB", "E", "E", "E", "BB" ],
+            [ "BB", "E", "CLO", "E", "BB" ],
+            [ "BB", "BB", "BB", "BB", "BB" ]
           ]
         },
         {
           "id": 2,
+          "rows": 4,
+          "columns": 4,
           "grid": [
-            [ "E", "B", "B" ],
-            [ "B", "E", "E" ],
-            [ "E", "B", "B" ]
+            [ "BB", "BB", "BB", "BB" ],
+            [ "BB", "E", "GO", "BB" ],
+            [ "BB", "CLO", "E", "BB" ],
+            [ "BB", "BB", "BB", "BB" ]
           ]
         }
       ]
     },
     {
-      "name": "Desert",
+      "Title": "Sandy Dunes",
+      "name": "sd",
       "puzzles": [
         {
           "id": 1,
+          "rows": 4,
+          "columns": 4,
           "grid": [
-            [ "E", "E", "B" ],
-            [ "B", "B", "E" ],
-            [ "E", "B", "B" ]
+            [ "BB", "BB", "BB", "BB" ],
+            [ "BB", "E", "E", "BB" ],
+            [ "BB", "GO", "CLO", "BB" ],
+            [ "BB", "BB", "BB", "BB" ]
           ]
         },
         {
           "id": 2,
+          "rows": 4,
+          "columns": 4,
           "grid": [
-            [ "B", "E", "B" ],
-            [ "E", "B", "E" ],
-            [ "B", "E", "B" ]
+            [ "BB", "BB", "BB", "BB" ],
+            [ "BB", "E", "CLO", "BB" ],
+            [ "BB", "GO", "E", "BB" ],
+            [ "BB", "BB", "BB", "BB" ]
           ]
         }
       ]
