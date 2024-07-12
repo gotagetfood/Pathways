@@ -52,24 +52,24 @@ struct FBiomesData
 UCLASS()
 class PATHWAYS_API APuzzleReader : public APawn
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
-	// Sets default values for this pawn's properties
-	APuzzleReader();
+    // Sets default values for this pawn's properties
+    APuzzleReader();
 
-	UFUNCTION(BlueprintCallable, Category = "PuzzleReader")
-	virtual TArray<AActor*> ReadPuzzle(FString id);
+    UFUNCTION(BlueprintCallable, Category = "PuzzleReader")
+    virtual TArray<AActor*> ReadPuzzle(FString id);
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+    // Called when the game starts or when spawned
+    virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+public:
+    // Called every frame
+    virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+    // Called to bind functionality to input
+    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 };

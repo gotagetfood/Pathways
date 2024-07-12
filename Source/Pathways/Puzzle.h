@@ -19,7 +19,7 @@ public:
 	void SpawnBricks(FVector loc, FRotator Rot);
 
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<AActor> ActorBPToSpawn;
+		TSubclassOf<AActor> ActorBPToSpawn;
 
 protected:
 	// Called when the game starts or when spawned

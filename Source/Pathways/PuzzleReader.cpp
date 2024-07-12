@@ -9,29 +9,29 @@
 // Sets default values
 APuzzleReader::APuzzleReader()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+    // Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+    PrimaryActorTick.bCanEverTick = true;
 
 }
 
 // Called when the game starts or when spawned
 void APuzzleReader::BeginPlay()
 {
-	Super::BeginPlay();
-	
+    Super::BeginPlay();
+
 }
 
 // Called every frame
 void APuzzleReader::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
+    Super::Tick(DeltaTime);
 
 }
 
 // Called to bind functionality to input
 void APuzzleReader::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	//Super::SetupPlayerInputComponent(PlayerInputComponent);
+    //Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
 
@@ -39,11 +39,11 @@ void APuzzleReader::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 TArray<AActor*> APuzzleReader::ReadPuzzle(FString id)
 {
-	TArray<AActor*> PuzzleActors;
+    TArray<AActor*> PuzzleActors;
 
-	// Define the path to the JSON file
-	FString FilePath = FPaths::ProjectContentDir() / TEXT("Pathways/Content/PathWays/Data/PuzzleData.json");
-	FString JsonString;
+    // Define the path to the JSON file
+    FString FilePath = FPaths::ProjectContentDir() / TEXT("Pathways/Content/PathWays/Data/PuzzleData.json");
+    FString JsonString;
 
     // Load the JSON file to a string
     if (FFileHelper::LoadFileToString(JsonString, *FilePath))
