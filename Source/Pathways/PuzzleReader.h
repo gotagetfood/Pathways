@@ -78,11 +78,11 @@ public:
     TSubclassOf<AActor> BrickBlocking;
 
     // Player Bricks
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks_CL")
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
     TSubclassOf<AActor> BrickCLOrange;
 
     // Goal Bricks
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks_GO")
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
     TSubclassOf<AActor> BrickGoalOrange;
 
 private:

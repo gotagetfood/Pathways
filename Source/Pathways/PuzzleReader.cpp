@@ -59,7 +59,6 @@ TSubclassOf<AActor> APuzzleReader::GetBrickClass(const FString& BrickType)
 TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& OutColumns, FString& Test)
 {
     TArray<AActor*> PuzzleActors;
-
     // Define the path to the JSON file
     FString FilePath = FPaths::ProjectContentDir() / TEXT("PathWays/Data/PuzzleData.json");
     FString JsonString;
@@ -76,19 +75,14 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& Out
 
         if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
         {
-
             FBiomesData BiomesData;
             if (FJsonObjectConverter::JsonObjectToUStruct(JsonObject.ToSharedRef(), &BiomesData, 0, 0))
             {
-                Test = TEXT("a");
-
                 // Extract the biome name and puzzle ID from the given ID string
                 FString BiomeName;
                 FString PuzzleIdStr;
                 if (id.Split("_", &BiomeName, &PuzzleIdStr))
                 {
-                    Test = PuzzleIdStr;
-
                     int32 PuzzleId = FCString::Atoi(*PuzzleIdStr);
 
                     // Find the matching biome
@@ -112,8 +106,7 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& Out
                                         for (int32 ColIndex = 0; ColIndex < GridRow.Row.Num(); ++ColIndex)
                                         {
                                             FString BrickType = GridRow.Row[ColIndex];
-                                            APuzzleReader temp;
-                                            TSubclassOf<AActor> BrickClass = temp.GetBrickClass(BrickType);
+                                            TSubclassOf<AActor> BrickClass = GetBrickClass(BrickType);
 
                                             if (BrickClass)
                                             {
