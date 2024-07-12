@@ -37,6 +37,5 @@ void APuzzle::SpawnBricks(FVector Loc, FRotator Rot)
 	FActorSpawnParameters SpawnParams;
 	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
-	AActor* FirstBrick = GetWorld()->SpawnActor<AActor>(ActorBPToSpawn, Loc, Rot, SpawnParams);
-
+	GetWorld()->SpawnActor<AActor>(ActorBPToSpawn, Loc, Rot, SpawnParams);
 }

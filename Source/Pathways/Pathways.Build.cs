@@ -8,15 +8,6 @@ public class Pathways : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicDependencyModuleNames.AddRange(new string[] {
-            "Core",
-            "CoreUObject",
-            "Engine",
-            "InputCore",
-            "EnhancedInput",
-            "Json",          // Add this line
-            "JsonUtilities"  // Add this line
-        });
-
-    }
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+	}
 }
