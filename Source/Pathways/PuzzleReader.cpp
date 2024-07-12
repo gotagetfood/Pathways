@@ -63,31 +63,39 @@ TSubclassOf<AActor> APuzzleReader::GetBrickClass(const FString& BrickType)
     return nullptr;
 }
 
-TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& OutColumns)
+
+TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& OutColumns, FString& Test)
 {
     TArray<AActor*> PuzzleActors;
 
     // Define the path to the JSON file
-    FString FilePath = FPaths::ProjectContentDir() / TEXT("Data/PuzzleData.json");
+    FString FilePath = FPaths::ProjectContentDir() / TEXT("PathWays/Data/PuzzleData.json");
     FString JsonString;
 
     // Load the JSON file to a string
     if (FFileHelper::LoadFileToString(JsonString, *FilePath))
     {
+        /////Test = JsonString;
+
         // Parse the JSON string to a JSON object
         TSharedPtr<FJsonObject> JsonObject;
         TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(JsonString);
 
         if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
         {
+
             FBiomesData BiomesData;
             if (FJsonObjectConverter::JsonObjectToUStruct(JsonObject.ToSharedRef(), &BiomesData, 0, 0))
             {
+                Test = TEXT("a");
+
                 // Extract the biome name and puzzle ID from the given ID string
                 FString BiomeName;
                 FString PuzzleIdStr;
                 if (id.Split("_", &BiomeName, &PuzzleIdStr))
                 {
+                    Test = PuzzleIdStr;
+
                     int32 PuzzleId = FCString::Atoi(*PuzzleIdStr);
 
                     // Find the matching biome
@@ -96,31 +104,29 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& Out
                         if (Biome.Name == BiomeName)
                         {
                             // Find the matching puzzle in the biome
-                            for (const FPuzzle& Puzzle : Biome.Puzzles)
+                            for (const FGamePuzzle& Puzzle : Biome.Puzzles)
                             {
                                 if (Puzzle.Id == PuzzleId)
                                 {
                                     // Set the output rows and columns
-                                    OutRows = Puzzle.Grid.Num();
-                                    OutColumns = (Puzzle.Grid.Num() > 0) ? Puzzle.Grid[0].Num() : 0;
+                                    OutRows = Puzzle.Rows;
+                                    OutColumns = Puzzle.Columns;
 
-                                    // Process the puzzle grid
+                                    // Create actors or process the puzzle data as needed
                                     for (int32 RowIndex = 0; RowIndex < Puzzle.Grid.Num(); ++RowIndex)
                                     {
-                                        const TArray<FString>& GridRow = Puzzle.Grid[RowIndex];
-                                        for (int32 ColIndex = 0; ColIndex < GridRow.Num(); ++ColIndex)
+                                        const FGridRow& GridRow = Puzzle.Grid[RowIndex];
+                                        for (int32 ColIndex = 0; ColIndex < GridRow.Row.Num(); ++ColIndex)
                                         {
-                                            FString BrickType = GridRow[ColIndex];
-                                            TSubclassOf<AActor> BrickClass = GetBrickClass(BrickType);
+                                            FString BrickType = GridRow.Row[ColIndex];
+                                            APuzzleReader temp;
+                                            TSubclassOf<AActor> BrickClass = temp.GetBrickClass(BrickType);
 
                                             if (BrickClass)
                                             {
-                                                // Spawn an actor and add it to the array
-                                                AActor* NewBrick = GetWorld()->SpawnActor<AActor>(BrickClass, FVector::ZeroVector, FRotator::ZeroRotator);
-                                                if (NewBrick)
-                                                {
-                                                    PuzzleActors.Add(NewBrick);
-                                                }
+                                                // Just create instances of the actors and add to the array
+                                                AActor* NewBrick = NewObject<AActor>(GetTransientPackage(), BrickClass);
+                                                PuzzleActors.Add(NewBrick);
                                             }
                                         }
                                     }
@@ -135,7 +141,7 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& Out
         }
     }
 
-    // Return empty array if the puzzle is not found or cannot be loaded
+    // Return empty array if the puzzle is not found
     return PuzzleActors;
 }
 
