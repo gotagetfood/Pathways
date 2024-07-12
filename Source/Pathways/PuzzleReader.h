@@ -12,7 +12,7 @@ struct FGridRow
 {
     GENERATED_BODY()
 
-    UPROPERTY(BlueprintReadWrite)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TArray<FString> Row;
 };
 
@@ -21,10 +21,16 @@ struct FGamePuzzle
 {
     GENERATED_BODY()
 
-    UPROPERTY(BlueprintReadWrite)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     int32 Id;
 
-    UPROPERTY(BlueprintReadWrite)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    int32 Rows;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    int32 Columns;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TArray<FGridRow> Grid;
 };
 
@@ -33,10 +39,10 @@ struct FBiome
 {
     GENERATED_BODY()
 
-    UPROPERTY(BlueprintReadWrite)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FString Name;
 
-    UPROPERTY(BlueprintReadWrite)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TArray<FGamePuzzle> Puzzles;
 };
 
@@ -45,7 +51,7 @@ struct FBiomesData
 {
     GENERATED_BODY()
 
-    UPROPERTY(BlueprintReadWrite)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TArray<FBiome> Biomes;
 };
 
@@ -59,7 +65,28 @@ public:
     APuzzleReader();
 
     UFUNCTION(BlueprintCallable, Category = "PuzzleReader")
-    virtual TArray<AActor*> ReadPuzzle(FString id);
+    virtual TArray<AActor*> ReadPuzzle(FString id, int32& OutRows, int32& OutColumns, FString& Test);
+
+    // Building Bricks
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickBackBoard;
+
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickBlocking;
+
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickBorder;
+
+    // Player Bricks
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickCLOrange;
+
+    // Goal Bricks
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<AActor> BrickGoalOrange;
+
+private:
+    TSubclassOf<AActor> GetBrickClass(const FString& BrickType);
 
 protected:
     // Called when the game starts or when spawned

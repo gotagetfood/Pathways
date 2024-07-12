@@ -1,43 +1,56 @@
 {
-  "biomes": [
+  "Biomes": [
     {
-      "name": "Red Forest",
-      "puzzles": [
+      "Name": "rf",
+      "Puzzles": [
         {
-          "id": 1,
-          "grid": [
-            [ "B", "B", "E" ],
-            [ "E", "B", "B" ],
-            [ "B", "E", "B" ]
+          "Id": 1,
+          "Rows": 5,
+          "Columns": 5,
+          "Grid": [
+            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] },
+            { "Row": [ "BB", "E", "GO", "E", "BB" ] },
+            { "Row": [ "BB", "E", "E", "E", "BB" ] },
+            { "Row": [ "BB", "E", "CLO", "E", "BB" ] },
+            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] }
           ]
         },
         {
-          "id": 2,
-          "grid": [
-            [ "E", "B", "B" ],
-            [ "B", "E", "E" ],
-            [ "E", "B", "B" ]
+          "Id": 2,
+          "Rows": 4,
+          "Columns": 4,
+          "Grid": [
+            { "Row": [ "BB", "BB", "BB", "BB" ] },
+            { "Row": [ "BB", "E", "GO", "BB" ] },
+            { "Row": [ "BB", "CLO", "E", "BB" ] },
+            { "Row": [ "BB", "BB", "BB", "BB" ] }
           ]
         }
       ]
     },
     {
-      "name": "Desert",
-      "puzzles": [
+      "Name": "sd",
+      "Puzzles": [
         {
-          "id": 1,
-          "grid": [
-            [ "E", "E", "B" ],
-            [ "B", "B", "E" ],
-            [ "E", "B", "B" ]
+          "Id": 1,
+          "Rows": 4,
+          "Columns": 4,
+          "Grid": [
+            { "Row": [ "BB", "BB", "BB", "BB" ] },
+            { "Row": [ "BB", "E", "E", "BB" ] },
+            { "Row": [ "BB", "GO", "CLO", "BB" ] },
+            { "Row": [ "BB", "BB", "BB", "BB" ] }
           ]
         },
         {
-          "id": 2,
-          "grid": [
-            [ "B", "E", "B" ],
-            [ "E", "B", "E" ],
-            [ "B", "E", "B" ]
+          "Id": 2,
+          "Rows": 4,
+          "Columns": 4,
+          "Grid": [
+            { "Row": [ "BB", "BB", "BB", "BB" ] },
+            { "Row": [ "BB", "E", "CLO", "BB" ] },
+            { "Row": [ "BB", "GO", "E", "BB" ] },
+            { "Row": [ "BB", "BB", "BB", "BB" ] }
           ]
         }
       ]

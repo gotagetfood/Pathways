@@ -37,31 +37,65 @@ void APuzzleReader::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 //MY STUFF
 
-TArray<AActor*> APuzzleReader::ReadPuzzle(FString id)
+TSubclassOf<AActor> APuzzleReader::GetBrickClass(const FString& BrickType)
+{
+    if (BrickType == TEXT("BB"))
+    {
+        return BrickBorder;
+    }
+    else if (BrickType == TEXT("E"))
+    {
+        return BrickBackBoard;
+    }
+    else if (BrickType == TEXT("BL"))
+    {
+        return BrickBlocking;
+    }
+    else if (BrickType == TEXT("CLO"))
+    {
+        return BrickCLOrange;
+    }
+    else if (BrickType == TEXT("GO"))
+    {
+        return BrickGoalOrange;
+    }
+
+    return nullptr;
+}
+
+TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& OutColumns, FString& Test)
 {
     TArray<AActor*> PuzzleActors;
 
     // Define the path to the JSON file
-    FString FilePath = FPaths::ProjectContentDir() / TEXT("Pathways/Content/PathWays/Data/PuzzleData.json");
+    FString FilePath = FPaths::ProjectContentDir() / TEXT("PathWays/Data/PuzzleData.json");
     FString JsonString;
 
     // Load the JSON file to a string
     if (FFileHelper::LoadFileToString(JsonString, *FilePath))
     {
+        // Log the loaded JSON string (for debugging)
+        UE_LOG(LogTemp, Warning, TEXT("Loaded JSON content: %s"), *JsonString);
+
         // Parse the JSON string to a JSON object
         TSharedPtr<FJsonObject> JsonObject;
         TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(JsonString);
 
         if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
         {
+
             FBiomesData BiomesData;
             if (FJsonObjectConverter::JsonObjectToUStruct(JsonObject.ToSharedRef(), &BiomesData, 0, 0))
             {
+                Test = TEXT("a");
+
                 // Extract the biome name and puzzle ID from the given ID string
                 FString BiomeName;
                 FString PuzzleIdStr;
                 if (id.Split("_", &BiomeName, &PuzzleIdStr))
                 {
+                    Test = PuzzleIdStr;
+
                     int32 PuzzleId = FCString::Atoi(*PuzzleIdStr);
 
                     // Find the matching biome
@@ -74,9 +108,28 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id)
                             {
                                 if (Puzzle.Id == PuzzleId)
                                 {
+                                    // Set the output rows and columns
+                                    OutRows = Puzzle.Rows;
+                                    OutColumns = Puzzle.Columns;
+
                                     // Create actors or process the puzzle data as needed
-                                    // For example, you could create puzzle pieces here and add them to PuzzleActors
-                                    // (Your code to create and return puzzle actors)
+                                    for (int32 RowIndex = 0; RowIndex < Puzzle.Grid.Num(); ++RowIndex)
+                                    {
+                                        const FGridRow& GridRow = Puzzle.Grid[RowIndex];
+                                        for (int32 ColIndex = 0; ColIndex < GridRow.Row.Num(); ++ColIndex)
+                                        {
+                                            FString BrickType = GridRow.Row[ColIndex];
+                                            APuzzleReader temp;
+                                            TSubclassOf<AActor> BrickClass = temp.GetBrickClass(BrickType);
+
+                                            if (BrickClass)
+                                            {
+                                                // Just create instances of the actors and add to the array
+                                                AActor* NewBrick = NewObject<AActor>(GetTransientPackage(), BrickClass);
+                                                PuzzleActors.Add(NewBrick);
+                                            }
+                                        }
+                                    }
 
                                     return PuzzleActors;
                                 }
@@ -85,10 +138,25 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id)
                     }
                 }
             }
+            else
+            {
+                // Log the error if JSON to UStruct conversion fails
+                UE_LOG(LogTemp, Error, TEXT("Failed to deserialize JSON"));
+            }
+        }
+        else
+        {
+            // Log an error if JSON deserialization fails
+            UE_LOG(LogTemp, Error, TEXT("Failed to deserialize JSON"));
         }
     }
+    else
+    {
+        // Log an error if file loading fails
+        UE_LOG(LogTemp, Error, TEXT("Failed to load JSON file: %s"), *FilePath);
+    }
 
-    // Return empty array if the puzzle is not found
+    // Return empty array if the puzzle is not found or there was an error
     return PuzzleActors;
 }
 
