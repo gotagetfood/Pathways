@@ -56,7 +56,7 @@ struct FBiomesData
 };
 
 UCLASS()
-class PATHWAYS_API APuzzleReader : public APawn
+class PATHWAYS_API APuzzleReader : public AActor
 {
     GENERATED_BODY()
 
@@ -64,25 +64,25 @@ public:
     // Sets default values for this pawn's properties
     APuzzleReader();
 
-    UFUNCTION(BlueprintCallable, Category = "PuzzleReader")
+    UFUNCTION(BlueprintCallable, Category = "Puzzle")
     virtual TArray<AActor*> ReadPuzzle(FString id, int32& OutRows, int32& OutColumns, FString& Test);
 
     // Building Bricks
-    UPROPERTY(EditAnywhere)
-    TSubclassOf<AActor> BrickBackBoard;
-
-    UPROPERTY(EditAnywhere)
-    TSubclassOf<AActor> BrickBlocking;
-
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
     TSubclassOf<AActor> BrickBorder;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
+    TSubclassOf<AActor> BrickBackBoard;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
+    TSubclassOf<AActor> BrickBlocking;
+
     // Player Bricks
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks_CL")
     TSubclassOf<AActor> BrickCLOrange;
 
     // Goal Bricks
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks_GO")
     TSubclassOf<AActor> BrickGoalOrange;
 
 private:
@@ -95,8 +95,4 @@ protected:
 public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
-
-    // Called to bind functionality to input
-    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };

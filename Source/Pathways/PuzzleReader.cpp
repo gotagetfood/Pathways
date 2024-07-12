@@ -28,13 +28,6 @@ void APuzzleReader::Tick(float DeltaTime)
 
 }
 
-// Called to bind functionality to input
-void APuzzleReader::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-    //Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-}
-
 //MY STUFF
 
 TSubclassOf<AActor> APuzzleReader::GetBrickClass(const FString& BrickType)
@@ -125,7 +118,7 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& Out
                                             if (BrickClass)
                                             {
                                                 // Just create instances of the actors and add to the array
-                                                AActor* NewBrick = NewObject<AActor>(GetTransientPackage(), BrickClass);
+                                                AActor* NewBrick = NewObject<AActor>(this, BrickClass);
                                                 PuzzleActors.Add(NewBrick);
                                             }
                                         }
@@ -159,4 +152,3 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& Out
     // Return empty array if the puzzle is not found or there was an error
     return PuzzleActors;
 }
-
