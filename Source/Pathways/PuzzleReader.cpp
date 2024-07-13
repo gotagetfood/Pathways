@@ -56,7 +56,7 @@ TSubclassOf<AActor> APuzzleReader::GetBrickClass(const FString& BrickType)
     return nullptr;
 }
 
-TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& OutColumns, FString& Test)
+TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& OutColumns)
 {
     TArray<AActor*> PuzzleActors;
     // Define the path to the JSON file

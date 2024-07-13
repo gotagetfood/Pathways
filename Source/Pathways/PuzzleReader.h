@@ -65,7 +65,7 @@ public:
     APuzzleReader();
 
     UFUNCTION(BlueprintCallable, Category = "Puzzle")
-    virtual TArray<AActor*> ReadPuzzle(FString id, int32& OutRows, int32& OutColumns, FString& Test);
+    virtual TArray<AActor*> ReadPuzzle(FString id, int32& OutRows, int32& OutColumns);
 
     // Building Bricks
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
