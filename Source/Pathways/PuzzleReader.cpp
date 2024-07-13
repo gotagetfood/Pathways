@@ -32,17 +32,17 @@ void APuzzleReader::Tick(float DeltaTime)
 
 TSubclassOf<AActor> APuzzleReader::GetBrickClass(const FString& BrickType)
 {
-    if (BrickType == TEXT("BB"))
-    {
-        return BrickBorder;
-    }
-    else if (BrickType == TEXT("E"))
+    if (BrickType == TEXT("E"))
     {
         return BrickBackBoard;
     }
     else if (BrickType == TEXT("BL"))
     {
         return BrickBlocking;
+    }
+    else if (BrickType == TEXT("BB"))
+    {
+        return BrickBorder;
     }
     else if (BrickType == TEXT("CLO"))
     {
