@@ -30,35 +30,35 @@ void APuzzleReader::Tick(float DeltaTime)
 
 //MY STUFF
 
-TSubclassOf<AActor> APuzzleReader::GetBrickClass(const FString& BrickType)
+FString APuzzleReader::GetBrickClass(const FString& BrickType)
 {
     if (BrickType == TEXT("E"))
     {
-        return BrickBackBoard;
+        return TEXT("BP_BackBord_Brick");
     }
     else if (BrickType == TEXT("BL"))
     {
-        return BrickBlocking;
+        return TEXT("BP_Blocking_Brick");
     }
     else if (BrickType == TEXT("BB"))
     {
-        return BrickBorder;
+        return TEXT("BP_Border_Brick");
     }
     else if (BrickType == TEXT("CLO"))
     {
-        return BrickCLOrange;
+        return TEXT("BP_OrangeCL_Brick");
     }
     else if (BrickType == TEXT("GO"))
     {
-        return BrickGoalOrange;
+        return TEXT("BP_OrangeGoal_Brick");
     }
 
-    return nullptr;
+    return TEXT("BrickFailed");
 }
 
-TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& OutColumns)
+TArray<FString> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& OutColumns)
 {
-    TArray<AActor*> PuzzleActors;
+    TArray<FString> PuzzleStrings;
     // Define the path to the JSON file
     FString FilePath = FPaths::ProjectContentDir() / TEXT("PathWays/Data/PuzzleData.json");
     FString JsonString;
@@ -106,18 +106,12 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& Out
                                         for (int32 ColIndex = 0; ColIndex < GridRow.Row.Num(); ++ColIndex)
                                         {
                                             FString BrickType = GridRow.Row[ColIndex];
-                                            TSubclassOf<AActor> BrickClass = GetBrickClass(BrickType);
-
-                                            if (BrickClass)
-                                            {
-                                                // Just create instances of the actors and add to the array
-                                                AActor* NewBrick = NewObject<AActor>(this, BrickClass);
-                                                PuzzleActors.Add(NewBrick);
-                                            }
+                                            FString BrickClass = GetBrickClass(BrickType);
+                                            PuzzleStrings.Add(BrickClass);
                                         }
                                     }
 
-                                    return PuzzleActors;
+                                    return PuzzleStrings;
                                 }
                             }
                         }
@@ -143,5 +137,5 @@ TArray<AActor*> APuzzleReader::ReadPuzzle(FString id, int32& OutRows, int32& Out
     }
 
     // Return empty array if the puzzle is not found or there was an error
-    return PuzzleActors;
+    return PuzzleStrings;
 }

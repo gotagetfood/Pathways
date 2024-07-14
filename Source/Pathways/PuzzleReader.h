@@ -65,29 +65,10 @@ public:
     APuzzleReader();
 
     UFUNCTION(BlueprintCallable, Category = "Puzzle")
-    virtual TArray<AActor*> ReadPuzzle(FString id, int32& OutRows, int32& OutColumns);
-
-
-    // Building Bricks
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
-    TSubclassOf<AActor> BrickBackBoard;
-
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
-    TSubclassOf<AActor> BrickBlocking;
-
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
-    TSubclassOf<AActor> BrickBorder;
-
-    // Player Bricks
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
-    TSubclassOf<AActor> BrickCLOrange;
-
-    // Goal Bricks
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bricks")
-    TSubclassOf<AActor> BrickGoalOrange;
+    virtual TArray<FString> ReadPuzzle(FString id, int32& OutRows, int32& OutColumns);
 
 private:
-    TSubclassOf<AActor> GetBrickClass(const FString& BrickType);
+    FString GetBrickClass(const FString& BrickType);
 
 protected:
     // Called when the game starts or when spawned
