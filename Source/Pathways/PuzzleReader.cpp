@@ -31,7 +31,7 @@ void APuzzleReader::Tick(float DeltaTime)
 
 FString APuzzleReader::GetBrickClass(const FString& BrickType)
 {
-    if (BrickType == TEXT("E"))
+    if (BrickType == TEXT("EE"))
     {
         return TEXT("BP_BackBord_Brick");
     }
@@ -43,13 +43,21 @@ FString APuzzleReader::GetBrickClass(const FString& BrickType)
     {
         return TEXT("BP_Border_Brick");
     }
-    else if (BrickType == TEXT("CLO"))
+    else if (BrickType == TEXT("CO"))
     {
         return TEXT("BP_OrangeCL_Brick");
+    }
+    else if (BrickType == TEXT("CG"))
+    {
+        return TEXT("BP_GreenCL_Brick");
     }
     else if (BrickType == TEXT("GO"))
     {
         return TEXT("BP_OrangeGoal_Brick");
+    }
+    else if (BrickType == TEXT("GG"))
+    {
+        return TEXT("BP_GreenGoal_Brick");
     }
 
     return TEXT("BrickFailed");
