@@ -33,31 +33,31 @@ FString APuzzleReader::GetBrickClass(const FString& BrickType)
 {
     if (BrickType == TEXT("EE"))
     {
-        return TEXT("BP_BackBord_Brick");
+        return TEXT("BP_Brick_BackBord");
     }
     else if (BrickType == TEXT("BL"))
     {
-        return TEXT("BP_Blocking_Brick");
+        return TEXT("BP_Brick_Blocking");
     }
     else if (BrickType == TEXT("BB"))
     {
-        return TEXT("BP_Border_Brick");
+        return TEXT("BP_Brick_Border");
     }
     else if (BrickType == TEXT("CO"))
     {
-        return TEXT("BP_OrangeCL_Brick");
+        return TEXT("BP_Brick_CL_Orange");
     }
     else if (BrickType == TEXT("CG"))
     {
-        return TEXT("BP_GreenCL_Brick");
+        return TEXT("BP_Brick_CL_Green");
     }
     else if (BrickType == TEXT("GO"))
     {
-        return TEXT("BP_OrangeGoal_Brick");
+        return TEXT("BP_Brick_Goal_Orange");
     }
     else if (BrickType == TEXT("GG"))
     {
-        return TEXT("BP_GreenGoal_Brick");
+        return TEXT("BP_Brick_Goal_Green");
     }
 
     return TEXT("BrickFailed");
