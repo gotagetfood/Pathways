@@ -31,33 +31,182 @@ void APuzzleReader::Tick(float DeltaTime)
 
 FString APuzzleReader::GetBrickClass(const FString& BrickType)
 {
-    if (BrickType == TEXT("EE"))
+    //BASE BRICKS
+    if (BrickType == TEXT("BB"))
     {
-        return TEXT("BP_Brick_BackBord");
+        return TEXT("Backboard");
     }
     else if (BrickType == TEXT("BL"))
     {
-        return TEXT("BP_Brick_Blocking");
+        return TEXT("Blocking");
     }
-    else if (BrickType == TEXT("BB"))
+    else if (BrickType == TEXT("BO"))
     {
-        return TEXT("BP_Brick_Border");
+        return TEXT("Border");
     }
+    else if (BrickType == TEXT("BI"))
+    {
+        return TEXT("Ice");
+    }
+    else if (BrickType == TEXT("BC"))
+    {
+        return TEXT("Cross");
+    }//color lines
     else if (BrickType == TEXT("CO"))
     {
-        return TEXT("BP_Brick_CL_Orange");
+        return TEXT("CL_Orange");
     }
     else if (BrickType == TEXT("CG"))
     {
-        return TEXT("BP_Brick_CL_Green");
+        return TEXT("CL_Green");
     }
+    else if (BrickType == TEXT("CB"))
+    {
+        return TEXT("CL_Blue");
+    }
+    else if (BrickType == TEXT("CL"))
+    {
+        return TEXT("CL_Light_Blue");
+    }
+    else if (BrickType == TEXT("CP"))
+    {
+        return TEXT("CL_Purple");
+    }
+    else if (BrickType == TEXT("CI"))
+    {
+        return TEXT("CL_Pink");
+    }
+    else if (BrickType == TEXT("CY"))
+    {
+        return TEXT("CL_Yellow");
+    }
+    else if (BrickType == TEXT("CR"))
+    {
+        return TEXT("CL_Red");
+    }
+    else if (BrickType == TEXT("CW"))
+    {
+        return TEXT("CL_Brown");
+    }
+    else if (BrickType == TEXT("CE"))
+    {
+        return TEXT("CL_Dark_Green");
+    }
+    else if (BrickType == TEXT("CA"))
+    {
+        return TEXT("CL_Cyan");
+    }
+    else if (BrickType == TEXT("CD"))
+    {
+        return TEXT("CL_Dark_Red");
+    }//goals
     else if (BrickType == TEXT("GO"))
     {
-        return TEXT("BP_Brick_Goal_Orange");
+        return TEXT("GO_Orange");
     }
     else if (BrickType == TEXT("GG"))
     {
-        return TEXT("BP_Brick_Goal_Green");
+        return TEXT("GO_Green");
+    }
+    else if (BrickType == TEXT("GB"))
+    {
+        return TEXT("GO_Blue");
+    }
+    else if (BrickType == TEXT("GL"))
+    {
+        return TEXT("GO_Light_Blue");
+    }
+    else if (BrickType == TEXT("GP"))
+    {
+        return TEXT("GO_Purple");
+    }
+    else if (BrickType == TEXT("GI"))
+    {
+        return TEXT("GO_Pink");
+    }
+    else if (BrickType == TEXT("GY"))
+    {
+        return TEXT("GO_Yellow");
+    }
+    else if (BrickType == TEXT("GR"))
+    {
+        return TEXT("GO_Red");
+    }
+    else if (BrickType == TEXT("GW"))
+    {
+        return TEXT("GO_Brown");
+    }
+    else if (BrickType == TEXT("GE"))
+    {
+        return TEXT("GO_Dark_Green");
+    }
+    else if (BrickType == TEXT("GA"))
+    {
+        return TEXT("GO_Cyan");
+    }
+    else if (BrickType == TEXT("GD"))
+    {
+        return TEXT("GO_Dark_Red");
+    }//line complete
+    else if (BrickType == TEXT("LO"))
+    {
+        return TEXT("LC_Orange");
+    }
+    else if (BrickType == TEXT("LG"))
+    {
+        return TEXT("LC_Green");
+    }
+    else if (BrickType == TEXT("LB"))
+    {
+        return TEXT("LC_Blue");
+    }
+    else if (BrickType == TEXT("LL"))
+    {
+        return TEXT("LC_Light_Blue");
+    }
+    else if (BrickType == TEXT("LP"))
+    {
+        return TEXT("LC_Purple");
+    }
+    else if (BrickType == TEXT("LI"))
+    {
+        return TEXT("LC_Pink");
+    }
+    else if (BrickType == TEXT("LY"))
+    {
+        return TEXT("LC_Yellow");
+    }
+    else if (BrickType == TEXT("LR"))
+    {
+        return TEXT("LC_Red");
+    }
+    else if (BrickType == TEXT("LW"))
+    {
+        return TEXT("LC_Brown");
+    }
+    else if (BrickType == TEXT("LE"))
+    {
+        return TEXT("LC_Dark_Green");
+    }
+    else if (BrickType == TEXT("LA"))
+    {
+        return TEXT("LC_Cyan");
+    }
+    else if (BrickType == TEXT("LD"))
+    {
+        return TEXT("LC_Dark_Red");
+    }//colorless
+    else if (BrickType == TEXT("CK"))
+    {
+        return TEXT("CL_Colorless");
+    }
+    else if (BrickType == TEXT("GK"))
+    {
+        return TEXT("GO_Colorless");
+    }
+    else if (BrickType == TEXT("LK"))
+    {
+        return TEXT("LC_Colorless");
     }
 
     return TEXT("BrickFailed");

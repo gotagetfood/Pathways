@@ -8,9 +8,9 @@
           "Rows": 3,
           "Columns": 5,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "CO", "EE", "GO", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "CO", "BB", "GO", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] }
           ]
         },
         {
@@ -18,10 +18,10 @@
           "Rows": 4,
           "Columns": 4,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "GO", "BB" ] },
-            { "Row": [ "BB", "CO", "EE", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "GO", "BO" ] },
+            { "Row": [ "BO", "CO", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO" ] }
           ]
         },
         {
@@ -29,23 +29,23 @@
           "Rows": 17,
           "Columns": 18,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BL", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "BL", "BL", "BL", "BL", "BL", "EE", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "Ee", "BL", "GO", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "EE", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "BL", "BL", "BL", "EE", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "BL", "BL", "EE", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "BL", "BL", "BL", "EE", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "BL", "BL", "EE", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "GG", "BL", "CO", "EE", "EE", "EE", "EE", "EE", "Ee", "EE", "EE", "EE", "EE", "EE", "BL", "CG", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "GO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "GG", "BL", "CO", "BB", "BB", "BB", "BB", "BB", "Bb", "BB", "BB", "BB", "BB", "BB", "BL", "CG", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] }
           ]
         },
         {
@@ -53,11 +53,11 @@
           "Rows": 5,
           "Columns": 3,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "GO", "BB" ] },
-            { "Row": [ "BB", "CO", "BB" ] },
-            { "Row": [ "BB", "GO", "BB" ] },
-            { "Row": [ "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "GO", "BO" ] },
+            { "Row": [ "BO", "CO", "BO" ] },
+            { "Row": [ "BO", "GO", "BO" ] },
+            { "Row": [ "BO", "BO", "BO" ] }
           ]
         },
         {
@@ -65,21 +65,21 @@
           "Rows": 15,
           "Columns": 5,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "GG", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "CO", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "GO", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "BL", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "GG", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "CG", "BL", "CG", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "GG", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "CO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "GO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "GG", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "CG", "BL", "CG", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] }
           ]
         },
         {
@@ -87,11 +87,11 @@
           "Rows": 5,
           "Columns": 15,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "CO", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "GO", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "CO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "GO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] }
           ]
         }
       ]
@@ -104,11 +104,11 @@
           "Rows": 5,
           "Columns": 5,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "GO", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "CO", "EE", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "GO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "CO", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] }
           ]
         },
         {
@@ -116,10 +116,10 @@
           "Rows": 4,
           "Columns": 4,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "GO", "BB" ] },
-            { "Row": [ "BB", "CO", "EE", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "GO", "BO" ] },
+            { "Row": [ "BO", "CO", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO" ] }
           ]
         },
         {
@@ -127,16 +127,16 @@
           "Rows": 10,
           "Columns": 5,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "GO", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "BL", "EE", "BL", "BB" ] },
-            { "Row": [ "BB", "BL", "EE", "BL", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "EE", "CO", "EE", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "GO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BL", "BB", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BB", "BL", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "CO", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] }
           ]
         }
       ]
@@ -149,10 +149,10 @@
           "Rows": 4,
           "Columns": 4,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "EE", "BB" ] },
-            { "Row": [ "BB", "GO", "CO", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "GO", "CO", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO" ] }
           ]
         },
         {
@@ -160,10 +160,10 @@
           "Rows": 4,
           "Columns": 4,
           "Grid": [
-            { "Row": [ "BB", "BB", "BB", "BB" ] },
-            { "Row": [ "BB", "EE", "CO", "BB" ] },
-            { "Row": [ "BB", "GO", "EE", "BB" ] },
-            { "Row": [ "BB", "BB", "BB", "BB" ] }
+            { "Row": [ "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "CO", "BO" ] },
+            { "Row": [ "BO", "GO", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO" ] }
           ]
         }
       ]
