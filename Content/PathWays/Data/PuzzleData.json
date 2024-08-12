@@ -47,6 +47,155 @@
             { "Row": [ "BO", "BB", "CO", "BB", "BO" ] },
             { "Row": [ "BO", "BO", "BO", "BO", "BO" ] }
           ]
+        },
+        {
+          "Id": 4,
+          "Rows": 10,
+          "Columns": 5,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "GO", "BB", "GG", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "CO", "BB", "CG", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] }
+          ]
+        },
+        {
+          "Id": 5,
+          "Rows": 10,
+          "Columns": 7,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "CO", "BL", "GO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "GG", "BL", "CG", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BL", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BL", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BL", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BL", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] }
+          ]
+        },
+        {
+          "Id": 6,
+          "Rows": 9,
+          "Columns": 9,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "CO", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BB", "BB", "BB", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "GG", "BB", "BB", "BL", "BB", "BB", "GO", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BB", "BB", "BB", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "CG", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] }
+          ]
+        },
+        {
+          "Id": 7,
+          "Rows": 9,
+          "Columns": 9,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "CO", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BB", "BB", "BB", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "GO", "BB", "BB", "BL", "BB", "BB", "GO", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BB", "BB", "BB", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "CO", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] }
+          ]
+        },
+        {
+          "Id": 8,
+          "Rows": 15,
+          "Columns": 5,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "GG", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "CO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "GO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "GG", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "CG", "BL", "CG", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO" ] }
+          ]
+        },
+        {
+          "Id": 9,
+          "Rows": 9,
+          "Columns": 9,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "CG", "BB", "BL", "GO", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "GG", "BB", "BO" ] },
+            { "Row": [ "BO", "CG", "BL", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BL", "GG", "BL", "CG", "BO" ] },
+            { "Row": [ "BO", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BL", "BL", "GG", "BO" ] },
+            { "Row": [ "BO", "GG", "BB", "BB", "CO", "CG", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] }
+          ]
+        },
+        {
+          "Id": 10,
+          "Rows": 14,
+          "Columns": 15,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "CG", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "GO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BB", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "GG", "BL", "CO", "BB", "BB", "BB", "BB", "Bb", "BB", "BB", "GG", "BL", "CG", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] }
+          ]
+        },
+        {
+          "Id": 11,
+          "Rows": 17,
+          "Columns": 18,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "Bb", "BL", "GO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BL", "BL", "BL", "BB", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BL", "BB", "BO" ] },
+            { "Row": [ "BO", "GG", "BL", "CO", "BB", "BB", "BB", "BB", "BB", "Bb", "BB", "BB", "BB", "BB", "BB", "BL", "CG", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO", "BO" ] }
+          ]
         }
       ]
     },
