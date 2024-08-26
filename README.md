@@ -12,3 +12,5 @@ Filling Cables
 Working Puzzles
 ![Alpha 1 0 image 3](https://github.com/user-attachments/assets/b5e294f1-2bcb-4366-a222-7e08b6446cdc)
 
+The Game is not currently Playable but when it is I will update this to say so. Here is a link it the Itch.io Page.
+https://gotagetfood.itch.io/pathways
