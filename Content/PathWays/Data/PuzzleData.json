@@ -242,6 +242,41 @@
           ]
         }
       ]
+    },
+
+
+
+
+
+
+
+
+    {
+      "Name": "test",
+      "Puzzles": [
+        {
+          "Id": 1,
+          "Rows": 4,
+          "Columns": 4,
+          "Grid": [
+            { "Row": [ "BO", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "GO", "CO", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BO" ] }
+          ]
+        },
+        {
+          "Id": 2,
+          "Rows": 4,
+          "Columns": 4,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BO", "BO" ] },
+            { "Row": [ "BO", "BB", "CO", "BO" ] },
+            { "Row": [ "BO", "GO", "BB", "BO" ] },
+            { "Row": [ "BO", "BO", "BO", "BO" ] }
+          ]
+        }
+      ]
     }
   ]
 }
