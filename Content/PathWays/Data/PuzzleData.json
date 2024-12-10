@@ -259,10 +259,10 @@
           "Rows": 4,
           "Columns": 4,
           "Grid": [
-            { "Row": [ "BO", "BB", "BB", "BO" ] },
-            { "Row": [ "BO", "BB", "BB", "BO" ] },
-            { "Row": [ "BO", "GO", "CO", "BO" ] },
-            { "Row": [ "BO", "BB", "BB", "BO" ] }
+            { "Row": [ "BB", "BB", "BB", "BB" ] },
+            { "Row": [ "BB", "GO", "BB", "BB" ] },
+            { "Row": [ "BB", "BB", "CO", "BB" ] },
+            { "Row": [ "BB", "BB", "BB", "BB" ] }
           ]
         },
         {
