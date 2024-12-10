@@ -267,13 +267,30 @@
         },
         {
           "Id": 2,
-          "Rows": 4,
-          "Columns": 4,
+          "Rows": 6,
+          "Columns": 6,
           "Grid": [
-            { "Row": [ "BO", "BO", "BO", "BO" ] },
-            { "Row": [ "BO", "BB", "CO", "BO" ] },
-            { "Row": [ "BO", "GO", "BB", "BO" ] },
-            { "Row": [ "BO", "BO", "BO", "BO" ] }
+            { "Row": [ "BO", "BB", "BO", "BB", "BO", "BB" ] },
+            { "Row": [ "BB", "BB", "BB", "BB", "BB", "BB" ] },
+            { "Row": [ "BB", "BB", "GO", "BB", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "CO", "BB", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "BB", "BB", "BB" ] },
+            { "Row": [ "BO", "BO", "BB", "BB", "BO", "BB" ] }
+          ]
+        },
+        {
+          "Id": 3,
+          "Rows": 8,
+          "Columns": 8,
+          "Grid": [
+            { "Row": [ "BO", "BO", "BB", "BB", "BO", "BO", "BB", "BB" ] },
+            { "Row": [ "BB", "BB", "BB", "BB", "BB", "BB", "BB", "BO" ] },
+            { "Row": [ "BB", "BL", "BB", "GO", "BB", "BB", "BB", "BB" ] },
+            { "Row": [ "BB", "BB", "GH", "GH", "GH", "BB", "GH", "BO" ] },
+            { "Row": [ "BO", "BB", "BB", "GH", "BL", "BB", "BB", "BO" ] },
+            { "Row": [ "BB", "CO", "BB", "BL", "BL", "BB", "BB", "BB" ] },
+            { "Row": [ "BO", "BL", "BB", "BB", "BB", "BB", "BO", "BB" ] },
+            { "Row": [ "BO", "BO", "BO", "BB", "BO", "BB", "BO", "BB" ] }
           ]
         }
       ]
